@@ -20,6 +20,10 @@ module.exports = () => {
         template: './index.html',
         title: 'Text Editor'
       }),
+      new InjectManifest({
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js',
+      }),
       
     ],
     // TODO: Add CSS loaders and babel to webpack.
